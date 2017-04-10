@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/add_place_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
+                android:text="地點資訊"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_for_store_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_place_title"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="24dp">
+
+
+                <TextView
+                    android:id="@+id/store_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地點名稱："
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/store_name_title_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/store_name_title"
+                    android:text=""
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_for_store_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_for_store_title"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="24dp">
+
+
+                <TextView
+                    android:id="@+id/store_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地點地址："
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/store_address_title_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@id/store_address_title"
+                    android:text=""
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_for_store_visited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_for_store_address"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="24dp">
+
+
+                <TextView
+                    android:id="@+id/store_visited_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到訪狀況:"
+                    android:textSize="18dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_store_visited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/store_visited_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:checkedButton="@+id/store_visited_no"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/store_visited_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="未到訪過"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:id="@+id/store_visited_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="已經去過"
+                        android:textSize="16dp" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_for_store_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_for_store_visited"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="24dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/relativelayout_for_store_score1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/store_score_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="滿意度："
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/store_score_title_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/store_score_title"
+                        android:text=""
+                        android:textSize="18dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relativelayout_for_store_score1">
+
+                    <TextView
+                        android:id="@+id/seebar_min_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="1" />
+
+                    <TextView
+                        android:id="@+id/seebar_max_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="5" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar_for_store_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@id/seebar_max_text"
+                        android:layout_toRightOf="@id/seebar_min_text"
+                        android:scrollbarSize="16dp" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_for_store_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_for_store_score"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="24dp">
+
+
+                <TextView
+                    android:id="@+id/store_notes_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="備註記事:"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/icon_store_notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ic_editor" />
+
+
+                <TextView
+                    android:id="@+id/txt_for_edit_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/store_notes_title"
+                    android:layout_toLeftOf="@id/icon_store_notes"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="16dp" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativelayout_for_store_note"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="35dp">
+
+                <RelativeLayout
+                    android:id="@+id/add_store_dialog_for_cancel_button"
+                    android:layout_width="128dp"
+                    android:layout_height="76dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="取消"
+                        android:textColor="#3d89cd"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/add_store_dialog_for_confirm_button"
+                    android:layout_width="128dp"
+                    android:layout_height="76dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="確認"
+                        android:textColor="#3d89cd"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

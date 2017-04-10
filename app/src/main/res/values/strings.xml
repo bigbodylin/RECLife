@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">RECLife</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="store_score_text">%1$.1f分</string>
+
+    <string-array name="tab_title">
+        <item>地圖</item>
+        <item>列表</item>        　　
+    </string-array>
+
+
+    <string-array name="score_spinner_wording">
+        <item>全部地點</item>
+        <item>尚未到訪</item>        　　
+        <item>滿意度1.0以上 未滿2.0</item>        　　
+        <item>滿意度2.0以上 未滿3.0</item>        　　
+        <item>滿意度3.0以上 未滿4.0</item>        　　
+        <item>滿意度4.0以上 未滿5.0</item>        　　
+        <item>滿意度5.0</item>
+    </string-array>
+
+    <string-array name="store_type_def">
+        <item>日式餐廳</item>
+        <item>美式餐廳</item>        　　
+        <item>韓式餐廳</item>        　　
+        <item>義式餐廳</item>        　　
+        <item>台式餐廳</item>        　　
+        <item>吃到飽類型</item>        　　
+        <item>火鍋</item>
+        <item>咖啡</item>
+        <item>模型玩具店</item>
+    </string-array>
+
+
+    <string name="edit_note_word_count">%1$s/500字</string>
+</resources>

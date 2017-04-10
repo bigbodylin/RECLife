@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:id="@+id/search_place_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="搜尋地點"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+
+    <AutoCompleteTextView
+        android:id="@+id/search_place_autocomplete_input"
+        style="@style/AutoCompleteTextViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_place_dialog_title"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="請輸入地點．．．"
+        android:textSize="20dp" />
+
+    <View
+        android:id="@+id/view_divided"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_below="@id/search_place_autocomplete_input"
+        android:background="@color/wallet_holo_blue_light"></View>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_divided"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="0dp">
+
+        <RelativeLayout
+            android:id="@+id/search_dialog_for_cancel_button"
+            android:layout_width="128dp"
+            android:layout_height="76dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="#3d89cd"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/search_dialog_for_confirm_button"
+            android:layout_width="128dp"
+            android:layout_height="76dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="確認"
+                android:textColor="#3d89cd"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

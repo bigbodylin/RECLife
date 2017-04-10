@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="bigbody.project.com.reclife.fragment.MapFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_for_choose"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#CCCCFF">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_for_spinner_store_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+
+            <TextView
+                android:id="@+id/spinner_store_type_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地點類型"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:textSize="15dp" />
+
+
+            <Spinner
+                android:id="@+id/spinner_for_store_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/spinner_store_type_title"></Spinner>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_for_spinner_divide"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/relativelayout_for_spinner_store_type"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="#000000">
+
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_for_spinner_store_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_for_spinner_divide"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/spinner_store_score_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到訪狀況及滿意度"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:textSize="15dp" />
+
+
+            <Spinner
+                android:id="@+id/spinner_for_store_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/spinner_store_score_title">
+
+            </Spinner>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linearlayout_btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#003C9D"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增地點"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/linearlayout_btn_add"
+        android:layout_below="@id/relativelayout_for_choose"></com.google.android.gms.maps.MapView>
+
+
+
+</RelativeLayout>

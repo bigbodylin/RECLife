@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_for_note_edit_layout_width"
+    android:layout_height="@dimen/dialog_for_note_edit_layout_height"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_for_edit_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txt_for_caregiver_note_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dialog_for_note_edit_layout_textview_title_marginLeft"
+            android:layout_marginTop="@dimen/dialog_for_note_edit_layout_textview_title_marginTop"
+            android:text="備註記事編輯"
+            android:textColor="#000000"
+            android:textSize="@dimen/dialog_for_note_edit_layout_textview_title_textsize" />
+
+        <TextView
+            android:id="@+id/txt_for_word_count_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dialog_for_note_edit_layout_textview_title_marginLeft"
+            android:layout_marginTop="@dimen/dialog_for_note_edit_layout_textview_word_count_marginTop"
+            android:layout_toRightOf="@id/txt_for_caregiver_note_title"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/dialog_for_note_edit_layout_textview_word_count_textsize" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_for_care_note_top_division_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_for_note_edit_layout_division_line_height"
+        android:layout_below="@id/relative_layout_for_edit_dialog_title"
+        android:layout_marginLeft="@dimen/dialog_for_note_edit_layout_division_line_marginLeft"
+        android:layout_marginRight="@dimen/dialog_for_note_edit_layout_division_line_marginRight"
+        android:layout_marginTop="@dimen/dialog_for_note_edit_layout_division_line_marginTop"
+        android:background="#e2e2e2" />
+
+    <EditText
+        android:id="@+id/edittext_for_care_note"
+        android:layout_width="@dimen/dialog_for_note_edit_layout_edittext_width"
+        android:layout_height="@dimen/dialog_for_note_edit_layout_edittext_height"
+        android:layout_below="@id/view_for_care_note_top_division_line"
+        android:layout_marginLeft="@dimen/dialog_for_note_edit_layout_edittext_marginLeft"
+        android:layout_marginRight="@dimen/dialog_for_note_edit_layout_edittext_marginRight"
+        android:layout_marginTop="@dimen/dialog_for_note_edit_layout_edittext_marginTop"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLength="500"
+        android:textColor="#000000"
+        android:textSize="@dimen/dialog_for_note_edit_layout_edittext_textsize" />
+
+    <View
+        android:id="@+id/view_for_care_note_bottom_division_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_for_note_edit_layout_division_line_height"
+        android:layout_below="@id/edittext_for_care_note"
+        android:layout_marginLeft="@dimen/dialog_for_note_edit_layout_division_line_marginLeft"
+        android:layout_marginRight="@dimen/dialog_for_note_edit_layout_division_line_marginRight"
+        android:layout_marginTop="@dimen/dialog_for_note_edit_layout_division_line_marginTop"
+        android:background="#e2e2e2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_for_care_note_bottom_division_line"
+        android:layout_marginBottom="@dimen/dialog_for_note_edit_bottom_layout_marginBottom"
+        android:layout_marginLeft="@dimen/dialog_for_note_edit_bottom_layout_marginLeft"
+        android:layout_marginRight="@dimen/dialog_for_note_edit_bottom_layout_marginRight"
+        android:layout_marginTop="@dimen/dialog_for_note_edit_bottom_layout_marginTop" >
+
+        <RelativeLayout
+            android:id="@+id/edit_note_for_cancel_button"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textColor="#3d89cd"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_note_for_ok_button"
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/edit_note_for_cancel_button"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="完成"
+                android:textColor="#3d89cd"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

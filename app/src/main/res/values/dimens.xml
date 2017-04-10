@@ -1,0 +1,32 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+    <!-- note edit dialog xml -->
+    <dimen name="dialog_for_note_edit_layout_width">240dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_height">305dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_textview_title_marginLeft">24dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_textview_title_marginTop">24dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_textview_title_textsize">18dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_textview_word_count_marginTop">24dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_textview_word_count_marginLeft">37dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_textview_word_count_marginRight">24dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_textview_word_count_textsize">18dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_division_line_height">2dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_division_line_marginLeft">24dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_division_line_marginRight">24dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_division_line_marginTop">16dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_edittext_marginTop">16dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_edittext_textsize">18dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_edittext_width">192dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_edittext_height">147dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_edittext_marginLeft">24dp</dimen>
+    <dimen name="dialog_for_note_edit_layout_edittext_marginRight">24dp</dimen>
+    <dimen name="dialog_for_note_edit_bottom_layout_marginLeft">88dp</dimen>
+    <dimen name="dialog_for_note_edit_bottom_layout_marginRight">16dp</dimen>
+    <dimen name="dialog_for_note_edit_bottom_layout_marginTop">6dp</dimen>
+    <dimen name="dialog_for_note_edit_bottom_layout_marginBottom">22dp</dimen>
+</resources>
